@@ -1,6 +1,6 @@
 [submodule "OpenComputers"]
 	path = OpenComputers
-	url = git@github.com:Mstrodl/OpenComputers.git
+	url = ../OpenComputers.git
 [submodule "openswag"]
 	path = openswag
-	url = git@github.com:Mstrodl/openswag.git
+	url = ../openswag.git
