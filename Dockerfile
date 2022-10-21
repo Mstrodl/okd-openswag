@@ -29,4 +29,7 @@ RUN wget https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09
 
 COPY --from=builder /OpenComputers/build/libs/*.jar /openswag/build/libs/*.jar /app/mods
 
+RUN chown -R root:0 /app && \
+  chmod -R g+rw /app
+
 CMD java -jar /app/forge-*.jar -Dcom.mojang.eula.agree=true
